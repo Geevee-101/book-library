@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="book-script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container-main">
+        <h1>Book Library</h1>
+        <!-- render cards from library through JS -->
+        <div class="container-books" id="cards">
+        </div>
+        <button class="button-add" id="button_add">Add Book</button>
+        <!-- Dialog Box -->
+        <dialog class="dialog-add" id="dialog_add">
+            <h2>Add Book</h2>
+            <form class="form-add" id="form_add">
+                <!-- input -->
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title" value=""><br>
+                <label for="author">Author:</label><br>
+                <input type="text" id="author" name="author" value=""><br>
+                <label for="page">Pages:</label><br>
+                <input type="number" id="page" name="page" value=""><br>
+                <label for="read">Read:</label><br>
+                <select id="read" name="read">
+                    <option value="have read">have read</option>
+                    <option value="not read yet">not read yet</option>
+                </select><br><br>
+                <!-- action -->
+                <button type="cancel" id="cancel" formnovalidate>Cancel</button>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </dialog>
+    </main>
+</body>
+<footer>
+    <div class="footer-container">
+        A web development project by Aidi Khalid.</a>
+    </div>
+</footer>
+</html>
